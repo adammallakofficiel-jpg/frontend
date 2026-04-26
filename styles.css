@@ -1,0 +1,463 @@
+ :root {
+    --bg-color: #0b1220;
+    --text-color: white;
+  }
+
+  svg
+  {
+      fill: currentColor;
+      stroke: currentColor;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Dark mode variables */
+  .resume-bg.light {
+   --bg-color: white;
+    --text-color: black;
+  }
+
+  .resume-bg {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding: 50px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .resume
+  {
+    background-color: var(--bg-color);
+    width: 1000px;
+    height:1500px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+  }
+
+
+  .ModeSwitch {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 140px;
+    height: 40px;
+    padding:5px 5px 5px 30px;
+    cursor: pointer;
+    border: 2px solid rgba(129, 125, 125, 0.1);
+    font-size: 1rem;
+    position:absolute;
+    right: 10px;
+    border-radius: 7%;
+    top: 8px;
+  }
+
+  .SvgBulb
+  {
+    font-size: 1rem;
+    position: absolute;
+    right: 116px;
+    top: 12px;
+    
+  }
+
+  header {
+    padding: 2rem;
+    display: flex;
+  }
+
+  .Image
+  {
+    width: 100px;
+    height: 100px;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+  }
+
+
+.HeaderInfo
+{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    flex: 1;
+}
+
+
+ul {
+  display: flex; 
+  list-style: none;
+  color:rgba(75, 72, 72, 0.7);
+  gap: 18px;
+  margin-top: 5px;
+}
+
+
+
+.gmail
+{
+  color: rgba(16, 16, 241, 0.849);
+  font-size: 1rem;
+}
+
+
+.SvgEmail
+{
+  margin-right: 0.5rem;
+  position: relative;
+  top: 9px;
+  color: #3b82f6;
+}
+
+.SvgPhone
+{
+  margin-left: 1rem;
+  position: relative;
+  top: 9px;
+}
+
+.PhoneNumber
+{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    position: relative;
+    top: 3px;
+}
+
+.SvgLocation
+{
+  margin-left: 0.75rem;
+  position: relative;
+  top: 5px;
+}
+
+.Adress
+{
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.SvgScope
+{
+  position: relative;
+  top: 20px;
+  color: #3b82f6;
+}
+
+.Portfolio
+{
+  color: blue;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 12px;
+
+}
+
+.LinkedIn
+{
+  margin-left: 20px;
+  position: relative;
+  top: 15px;
+  color: #3b82f6;
+}
+
+.LinkedInLink
+{
+  color: blue;
+  margin-left: 0.75rem;
+  position: relative;
+  top: 11px;
+}
+
+.SvgGitHub
+{
+  margin-left: 20px;
+  position: relative;
+  top: 15px;
+  color: #3b82f6;
+}
+
+.GitHubLink
+{
+  color: blue;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+hr{
+   color: lightgray;
+   position: relative;
+   top: 20px;
+   margin-left: calc(-36.5vw + 50%);
+   opacity: 0.3;
+}
+
+.resume-profile
+{
+  position: relative;
+  top: 4rem;
+  height: fit-content;
+  border: 2px solid rgba(129, 125, 125, 0.1);
+  margin-right: 70%;
+  padding: 30px;
+  margin-left: 20px;
+  border-radius: 6%;
+}
+
+
+.profile
+{
+    padding: 2px;
+    position: relative;
+    bottom: 10px;
+    color: rgba(75, 72, 72, 0.7);
+}
+
+.resume-skills
+{
+  position: relative;
+  top: 6rem;
+  height: fit-content;
+  border: 2px solid rgba(129, 125, 125, 0.1);
+  margin-right: 70%;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 6%;
+}
+
+.skills
+{
+  padding: 2px;
+  position: relative;
+    bottom: 10px;
+    color: rgba(75, 72, 72, 0.7);
+}
+
+
+.resume-ToolsandTech
+{
+  position: relative;
+  top: 8rem;
+  height: fit-content;
+  border: 2px solid rgba(129, 125, 125, 0.1);
+  margin-right: 70%;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 6%;
+}
+
+.toolsandtech
+{
+  padding: 2px;
+  position: relative;
+    bottom: 10px;
+    color: rgba(75, 72, 72, 0.7);
+}
+
+.resume-languages
+{
+  position: relative;
+  top: 10rem;
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid rgba(129, 125, 125, 0.1);
+  margin-right: 70%;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 4%;
+}
+
+.languages
+{
+  padding: 2px;
+  position: relative;
+    bottom: 10px;
+  color: rgba(75, 72, 72, 0.7);
+}
+
+.resume-interests
+{
+  position: relative;
+  top: 12rem;
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid rgba(129, 125, 125, 0.1);
+  margin-right: 70%;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 4%;
+}
+
+.interests
+{
+  padding: 2px;
+  position: relative;
+    bottom: 10px;
+    color: rgba(75, 72, 72, 0.7);
+}
+
+
+.resume-BodyContent
+{
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  margin-left: 35%;
+  border-radius: 4%;
+  bottom: 50rem;
+}
+
+
+.Experience {
+  display: inline-block; 
+}
+
+.Experience hr {
+  width: 100%;
+  margin: 4px 0 0;
+}
+
+
+.h4s
+{
+  position: relative;
+  top: 40px;
+}
+
+.h5s
+{
+  position: relative;
+  top: 24px;
+  left: 180px;
+  color: rgba(75, 72, 72, 0.7);
+}
+
+.Year
+{
+  position: relative;
+  top: 7.4px;
+  font-size: 0.8rem;
+  left: 520px;
+  color: rgba(75, 72, 72, 0.7);
+}
+
+.olContent
+{
+  list-style-type: disc;
+  position: relative;
+  top: 20px;
+  font-size: 1rem;
+  left: 50px;
+}
+
+.hrlong
+{
+  position: relative;
+  width: 200%;
+  border:1px solid #333;
+  top: 35px;
+  margin:auto;
+}
+
+.StProjects
+{
+    display: inline-block; 
+    position: relative;
+    top:50px;
+}
+
+
+.StProjects hr {
+  width: 100%;
+  margin: 4px 0 0;
+}
+
+.SelectedProjectsContent
+{
+  position: relative;
+  top: 50px;
+}
+
+
+.Education {
+  display: inline-block; 
+  position: relative;
+  top: 110px;
+}
+
+.Education hr {
+  width: 100%;
+  margin: 4px 0 0;
+}
+
+
+.EducationContent
+{
+  position: relative;
+  top: 110px;
+}
+
+.UniName
+{
+  position: relative;
+  top: 24px;
+  left: 220px;
+  color: rgba(75, 72, 72, 0.7);
+}
+
+.Certification {
+  display: inline-block; 
+  position: relative;
+  top: 180px;
+}
+
+.Certification hr {
+  width: 100%;
+  margin: 4px 0 0;
+}
+
+.CertificationContent
+{
+  position: relative;
+  top: 200px;
+}
+
+.CertiName
+{
+  position: relative;
+  top: 24px;
+  left: 220px;
+  color: rgba(75, 72, 72, 0.7);
+}
+
+.VolunteerAndExtras {
+  display: inline-block; 
+  position: relative;
+  top: 260px;
+}
+
+.VolunteerAndExtras hr {
+  width: 100%;
+  margin: 4px 0 0;
+}
+
+
+.VolunteerAndExtrasContent
+{
+  position: relative;
+  top: 260px;
+}
+
+.Club
+{
+  position: relative;
+  top: 24px;
+  left: 80px;
+  color: rgba(75, 72, 72, 0.7);
+}
